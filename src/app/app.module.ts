@@ -1,3 +1,5 @@
+import { HomeComponent } from './home/home.component';
+import { ModalModule } from './_modal/modal.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
@@ -10,10 +12,12 @@ import { AppComponent } from './app.component';
     imports: [
         BrowserModule,
         FormsModule,
-        AppRoutingModule
+        AppRoutingModule,
+        ModalModule
     ],
     declarations: [
         AppComponent,
+        HomeComponent
     ],
     bootstrap: [AppComponent]
 })
